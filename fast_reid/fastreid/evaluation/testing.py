@@ -2,6 +2,13 @@
 import logging
 import pprint
 import sys
+import collections.abc
+# before you import the package that causes the issue
+collections.Mapping = collections.abc.Mapping
+collections.MutableMapping = collections.abc.MutableMapping
+collections.Iterable = collections.abc.Iterable
+collections.MutableSet = collections.abc.MutableSet
+collections.Callable = collections.abc.Callable
 from collections import Mapping, OrderedDict
 
 import numpy as np

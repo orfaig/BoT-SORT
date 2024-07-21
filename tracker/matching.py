@@ -5,6 +5,10 @@ from scipy.spatial.distance import cdist
 
 from cython_bbox import bbox_overlaps as bbox_ious
 from tracker import kalman_filter
+np.float = float
+np.int = int   #module 'numpy' has no attribute 'int'
+np.object = object    #module 'numpy' has no attribute 'object'
+np.bool = bool    #module 'numpy' has no attribute 'bool'
 
 
 def merge_matches(m1, m2, shape):

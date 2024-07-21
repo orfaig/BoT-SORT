@@ -9,6 +9,10 @@ from tracker.basetrack import BaseTrack, TrackState
 from tracker.kalman_filter import KalmanFilter
 
 from fast_reid.fast_reid_interfece import FastReIDInterface
+np.float = float
+np.int = int   #module 'numpy' has no attribute 'int'
+np.object = object    #module 'numpy' has no attribute 'object'
+np.bool = bool    #module 'numpy' has no attribute 'bool'
 
 
 class STrack(BaseTrack):
